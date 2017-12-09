@@ -8,12 +8,27 @@
 
 import UIKit
 
-class Captain: NSObject {
+class Captain: NSObject, CaptainDelegate {
+
+    let captainType : CaptainType
     
     enum CaptainType {
         case Normal, Drunk
     }
     
+    init(captainType : CaptainType) {
+        self.captainType = captainType
+    }
+    
+    
+    func goFish(ocean: Ocean, depth: Int, tile: Int) -> Fish? {
+        switch captainType {
+        case CaptainType.Drunk:
+            return nil
+        case CaptainType.Normal:
+            return ocean.fishAt(depth: depth, tile: tile)
+        }
+    }
     
     
 

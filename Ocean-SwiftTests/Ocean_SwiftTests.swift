@@ -9,6 +9,8 @@
 import UIKit
 import XCTest
 
+@testable import Ocean_Swift
+
 class Ocean_SwiftTests: XCTestCase {
     
     var sub = Submarine()

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CaptainDelegate {
-    func goFish(ocean : Ocean, depth : Int, tile : Int) -> Fish
+    func goFish(ocean : Ocean, depth : Int, tile : Int) -> Fish?
 }
 
 class Submarine: NSObject {
@@ -64,9 +64,9 @@ class Submarine: NSObject {
         }
     }
     
-    func goFish(ocean : Ocean, depth : Int, tile : Int) -> Fish {
+    func goFish(ocean : Ocean , depth : Int, tile : Int) -> Fish? {
         let fish = captainDelegate?.goFish(ocean: ocean, depth: depth, tile: tile)
-        return fish!
+        return fish
     }
     
 }

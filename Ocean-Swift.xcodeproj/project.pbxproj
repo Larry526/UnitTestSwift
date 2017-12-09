@@ -9,13 +9,9 @@
 /* Begin PBXBuildFile section */
 		05657DE21FDA472F0007617D /* Captain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05657DE11FDA472F0007617D /* Captain.swift */; };
 		057258001FD74CCF00AC2093 /* Submarine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057257FF1FD74CCF00AC2093 /* Submarine.swift */; };
-		057258011FD74CD700AC2093 /* Submarine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057257FF1FD74CCF00AC2093 /* Submarine.swift */; };
 		057258031FD794E500AC2093 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057258021FD794E500AC2093 /* Fish.swift */; };
-		057258041FD796AD00AC2093 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057258021FD794E500AC2093 /* Fish.swift */; };
 		057258071FD799C100AC2093 /* GiantSalmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057258061FD799C100AC2093 /* GiantSalmon.swift */; };
-		057258081FD799C100AC2093 /* GiantSalmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057258061FD799C100AC2093 /* GiantSalmon.swift */; };
 		0572580A1FD79A4B00AC2093 /* GiantTuna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057258091FD79A4B00AC2093 /* GiantTuna.swift */; };
-		0572580B1FD79A4B00AC2093 /* GiantTuna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057258091FD79A4B00AC2093 /* GiantTuna.swift */; };
 		AF8AC93D1A7803E400934412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC93C1A7803E400934412 /* AppDelegate.swift */; };
 		AF8AC93F1A7803E400934412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC93E1A7803E400934412 /* ViewController.swift */; };
 		AF8AC9421A7803E400934412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8AC9401A7803E400934412 /* Main.storyboard */; };
@@ -23,7 +19,6 @@
 		AF8AC9471A7803E400934412 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8AC9451A7803E400934412 /* LaunchScreen.xib */; };
 		AF8AC9531A7803E400934412 /* Ocean_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC9521A7803E400934412 /* Ocean_SwiftTests.swift */; };
 		AF8AC95D1A78040400934412 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC95C1A78040400934412 /* Ocean.swift */; };
-		AF8AC9601A78210D00934412 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC95C1A78040400934412 /* Ocean.swift */; };
 		AF8AC9651A7845EA00934412 /* Ocean_SwiftTests_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC9641A7845EA00934412 /* Ocean_SwiftTests_02.swift */; };
 		AF8AC96C1A784A4300934412 /* Ocean_SwiftTests_03.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC96B1A784A4300934412 /* Ocean_SwiftTests_03.swift */; };
 		AF8AC96E1A784A5100934412 /* Ocean_SwiftTests_04.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8AC96D1A784A5100934412 /* Ocean_SwiftTests_04.swift */; };
@@ -207,11 +202,12 @@
 			attributes = {
 				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "com.lighthouse-labs";
 				TargetAttributes = {
 					AF8AC9361A7803E400934412 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = H36FGN369H;
 						LastSwiftMigration = 0800;
 					};
 					AF8AC94B1A7803E400934412 = {
@@ -280,14 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8AC9601A78210D00934412 /* Ocean.swift in Sources */,
-				057258011FD74CD700AC2093 /* Submarine.swift in Sources */,
 				AF8AC9721A784A6D00934412 /* Ocean_SwiftTests_06.swift in Sources */,
 				AF8AC96E1A784A5100934412 /* Ocean_SwiftTests_04.swift in Sources */,
 				AF8AC96C1A784A4300934412 /* Ocean_SwiftTests_03.swift in Sources */,
-				0572580B1FD79A4B00AC2093 /* GiantTuna.swift in Sources */,
-				057258081FD799C100AC2093 /* GiantSalmon.swift in Sources */,
-				057258041FD796AD00AC2093 /* Fish.swift in Sources */,
 				AF8AC9871A79ED1A00934412 /* README.md in Sources */,
 				AF8AC9651A7845EA00934412 /* Ocean_SwiftTests_02.swift in Sources */,
 				AF8AC9701A784A6100934412 /* Ocean_SwiftTests_05.swift in Sources */,
@@ -333,13 +324,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -348,6 +347,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -376,13 +376,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -390,6 +398,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -399,6 +408,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -407,9 +417,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H36FGN369H;
 				INFOPLIST_FILE = "Ocean-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "lighthouse-labs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "LL.Ocean-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -419,9 +430,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H36FGN369H;
 				INFOPLIST_FILE = "Ocean-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "lighthouse-labs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "LL.Ocean-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
